@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -29,5 +30,5 @@ public class User {
     private String about;
 
     @Transient
-    List<Ratings> ratings;
+    List<Ratings> ratings = new ArrayList<>();
 }
